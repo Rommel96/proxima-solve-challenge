@@ -1,7 +1,7 @@
 <h1 align='center'>Proxima Challenge</h1>
 
 
-######In this repo there is a code challenge, it is divided into FrontEnd and Backend even though they are not related or connected.
+In this repo there is a code challenge, it is divided into FrontEnd and Backend even though they are not related or connected.
 
 Prettier and Eslint were used to enforce good coding practices.
 
