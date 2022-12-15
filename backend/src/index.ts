@@ -27,8 +27,6 @@ app.get("/currency-converter", (req: Request, res: Response) => {
       })
     );
   } catch (error: any) {
-    console.log({ error });
-
     return res.send(
       buildFailedResponse(
         error.message ||

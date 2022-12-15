@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  app:
+    container_name: proxima-server
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev # Use for Development
+    ports:
+      - "3005:3005" # node-server
+    volumes:
+      - .:/app
+    env_file:
+      - ./.env
+    depends_on:
+      - database
+  database:
+    container_name: 'database'
+    image: postgres
+    environment:
+      POSTGRES_USER: devdb
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: devdb
+    volumes:
+      - './postgres_data:/var/lib/postgresql/data' 
+    ports:
+      - "5434:5432"        
+
