@@ -6,6 +6,8 @@
 - Terminal
 - Node version > 14
 
+***If using M1 chip, uncomment ```platform: linux/x86_64``` in ```docker-compose.yml```***
+
 
 ## **Using 📦**
 
@@ -35,6 +37,11 @@ yarn migration
 ```
 curl --request GET \
   --url 'http://localhost:3005/exchange-rate?startAt=12%2F01%2F2021&endAt=12%2F01%2F2022&='
+```
+**Query filters:** Allows you to filter by a range of dates when a change occurred
+```
+startAt: Date @optional  
+endAt: Date @optional 
 ```
 
 **Use withou docket**
