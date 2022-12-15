@@ -18,11 +18,12 @@ services:
     container_name: 'database'
     image: postgres
     environment:
-      POSTGRES_USER: devdb
+      POSTGRES_USER: proxima
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: devdb
+      POSTGRES_DB: proxima
     volumes:
       - './postgres_data:/var/lib/postgresql/data' 
     ports:
-      - "5434:5432"        
+      - "5434:5432"
+          
 
