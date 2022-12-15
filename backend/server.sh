@@ -21,4 +21,4 @@ echo "=== insert mock data into DB ===="
 node scripts/initial_data.js;
 
 echo "=== startin server ===="
-node dist/index.js
+yarn start
